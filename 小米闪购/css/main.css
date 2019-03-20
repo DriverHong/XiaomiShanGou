@@ -116,10 +116,11 @@ ul{
     list-style-type: none;
 }
 
-.header-nav ul{
+.header-nav .nav-list{
     width: 820px;
     height: 88px;
     font-size: 16px;
+    padding: 12px  0 0 30px;     /* 整个导航栏的位置 */
 }
 
 .header-nav ul .nav-item{
@@ -134,4 +135,28 @@ ul{
 
 .header-nav ul .nav-item a:hover{
     color:#ff6700;
+}
+
+/* 设置li的位置 */
+.nav-all{
+    float: left;
+    width: 127px;
+    padding: 0 15px 0 0;
+}
+
+/* 设置a 标签的位置 */
+.nav-all a{
+    display: block;
+    padding: 26px 0 38px;
+    text-align: right;
+    color: #333;
+}
+
+.container::before,.container::after,.clearfix::before,.container::after{
+    content: '';
+    display: table;
+}
+
+.container::after,.clearfix::after{
+    clear: both;
 }
